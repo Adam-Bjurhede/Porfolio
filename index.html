@@ -10,68 +10,109 @@
 </head>
 
 <body>
+
+    <!-- HEADER WITH NAV AND LANDING -->
     <header class="header">
+        <!-- NAVIGATION -->
         <nav class="top-nav">
+            <!-- INTERNAL NAVIGATION -->
             <ul>
-                <li><a href="#om">Om Mig</a></li>
-                <li><a href="#utbildning">Utbildning</a></li>
-                <li><a href="#erfarenhet">Erfarenhet</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <a href="#about">About</a>
+                <a href="#education">Education</E>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
             </ul>
+            <!-- END - INTERNAL NAVIGATION -->
+
+            <!--EXTERNAL NAVIGATION -->
             <ul>
                 <a href="https://github.com/Adam-Bjurhede" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/adam-bjurhede-67b048134/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/adam-bjurhede-67b048134/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
             </ul>
-        </nav>
+            <!-- END- EXTERNAL NAVIGATION -->
 
+        </nav>
+        <!-- SLUT NAVIGATION -->
+
+        <!-- LANDNIg SECTION -->
         <section class="landing">
-            <h1>Hej! Jag heter Adam, jag arbetar med Människor och Datorer. </h1>
-            <h2>FrontEndUtvecklare | Stödpedagog</h2>
-            <a href="#om"><button type="button">Om mig</button></a>
-            <a href="#kontakt"><button type="button">Kontakta Mig</button></a>
+            <h1>Hi, I'm Adam.</h1>
+            <h2>I work with People And Computers</h2>
+            <h3>Front End Developer | Stödpedagog</h3>
+            <a href="#about"><button type="button">About</button></a>
+            <a href="#contact"><button type="button">Contact</button></a>
         </section>
+        <!-- End - LANDNING SEcTION -->
     </header>
+    <!--End - HEADER WITH NAV AND LANDING -->
+
+    <!-- MAIN SECTION -->
     <main>
-        <section id="om">
-            <article class="kort-om-mig">
-                <h3>Kort Om Mig</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis placeat laborum quam perspiciatis blanditiis nam quibusdam assumenda? Ea distinctio assumenda adipisci. Odio et consectetur pariatur nemo repellat? Consequatur accusantium cumque numquam. Vel, nisi ad dolor dolorum, itaque est, quidem sequi et asperiores esse excepturi eaque eveniet cum rem omnis!</p>
+        <!-- ABOUT -->
+        <section id="about">
+
+            <!-- BREIF ABOUT -->
+            <article class="breif-about">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis placeat laborum quam
+                    perspiciatis blanditiis nam quibusdam assumenda? Ea distinctio assumenda adipisci. Odio et
+                    consectetur pariatur nemo repellat? Consequatur accusantium cumque numquam. Vel, nisi ad dolor
+                    dolorum, itaque est, quidem sequi et asperiores esse excepturi eaque eveniet cum rem omnis!</p>
             </article>
-            <article id="utbildning">
-                <h3>Utbildning</h3>
-                    <h4>Stödpedagog</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque labore natus maiores, assumenda in odio consequatur molestias at ex ut.</p>
-                    <h4>Frontendutvecklare Websäkerhet</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus rem amet omnis expedita dignissimos numquam quae vitae, placeat corporis?</p>
+            <!-- END - BREIF ABOUT ME -->
+
+
+            <!-- EDUCATION -->
+            <article id="education">
+                <h3>Education</h3>
+                <h4>Stödpedagog</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque labore natus maiores, assumenda in
+                    odio consequatur molestias at ex ut.</p>
+                <h4>Frontendutvecklare Websäkerhet</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus rem amet omnis
+                    expedita dignissimos numquam quae vitae, placeat corporis?</p>
             </article>
-            <article class="erfarenhet">
-                <h3>Erfarenhet</h3>
-                    <h4>SEO</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, exercitationem nisi. Labore reiciendis praesentium iusto iste facere tempora fugiat numquam mollitia recusandae quos atque ex aperiam, quia suscipit laudantium, debitis, harum beatae culpa odio maiores tempore illo voluptatibus adipisci voluptate? Saepe dolore sapiente placeat dicta dolores suscipit, odio voluptate rem.</p>
+            <!-- END EDUCATION -->
+
+            <!-- EXPERIENCE -->
+            <article id="experience" class="erfarenhet">
+                <h3>Experience</h3>
+                <h4>SEO</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, exercitationem nisi. Labore
+                    reiciendis praesentium iusto iste facere tempora fugiat numquam mollitia recusandae quos atque ex
+                    aperiam, quia suscipit laudantium, debitis, harum beatae culpa odio maiores tempore illo
+                    voluptatibus adipisci voluptate? Saepe dolore sapiente placeat dicta dolores suscipit, odio
+                    voluptate rem.</p>
             </article>
+             <!-- END - EXPERIENCE -->
+
         </section>
-        <!-- KONTAKTFORMULÄR -->
-        <section class="kontakt">
+        <!-- END - ABOUT -->
+
+        <!-- CONTACT FORM -->
+        <section id="contact" class="kontakt">
             <h3>Kontakt</h3>
             <form>
-                <label for="namn">Namn</label>
-                <input type="text" name="namn" id="namn" placeholder="Ditt Namn">
-                <label for="e-post">E-post</label>
-                <input type="email" name="epost" id="e-post" placeholder="din@e-postadress">
-                <label for="meddelande">meddelande</label>
-                <textarea name="meddelande" id="meddelande" cols="30" rows="10"></textarea>
+                <label for="namn">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                <label for="email">Email</label>
+                <input type="email" name=email" id="email" placeholder="your@emial">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
             </form>
         </section>
-         <!-- SLUT - KONTAKTFORMULÄR -->
+        <!-- END CONTACT FORM -->
     </main>
-    <!-- SLUT MAIN SECTION -->
+    <!-- END MAIN SECTION -->
 
     <!-- FOOTER -->
     <footer>
-        <small>    &#169; 2021 Adam Bjurhede</small>
+        <small> &#169; 2021 Adam Bjurhede</small>
         <ul>
             <a href="https://github.com/Adam-Bjurhede" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/adam-bjurhede-67b048134/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/adam-bjurhede-67b048134/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
         </ul>
     </footer>
 
