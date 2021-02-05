@@ -1,0 +1,33 @@
+Header
+    - Nav + Icons
+    - Welcome Text
+        -Faded background image
+    Nav buttons
+        -Read More
+        -Contact
+
+Main 
+    -About
+        -Breif about me
+
+        -Education
+
+        -Experience
+
+        -Expertice
+
+
+        -Projects
+
+
+Contact
+    -Form
+        -Name
+        -Email
+        -Message
+        -Submit
+
+Footer
+    -Copyright
+    - Email
+    - Social icons
