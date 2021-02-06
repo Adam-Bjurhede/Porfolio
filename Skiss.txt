@@ -1,33 +1,49 @@
-Header
-    - Nav + Icons
-    - Welcome Text
+    Header
         -Faded background image
-    Nav buttons
-        -Read More
-        -Contact
+        
+        - Nav + Icons 
+            - About, Education, Experience, Contact.
+            - Linkedin, Guthub
+                -mobile = block
+                -Tablet & Desktop = inline
 
-Main 
-    -About
-        -Breif about me
+        -  Welcome Text
+            -Faded background image
+        
+        - Buttons
+            -Read More
+                - Solid
+            -Contact
+                - Transparent
 
-        -Education
+    Main 
 
-        -Experience
+        -About
+            -Breif about me
 
-        -Expertice
+            -Education
+                - Fontendutvecklare Websäkerhet
+                - Stödpedagog
+
+            -Experience
+                Över 12 år
+            
+            -Expertice
+                SEO 
+                Lågaffektivt bemötande
+                Tydliggörande pedagogig
+
+            -Projects
 
 
-        -Projects
+    Contact
+        -Form
+            -Name
+            -Email
+            -Message
+            -Submit
 
-
-Contact
-    -Form
-        -Name
-        -Email
-        -Message
-        -Submit
-
-Footer
-    -Copyright
-    - Email
-    - Social icons
+    Footer
+        -Copyright
+        - Email
+        - Social icons
