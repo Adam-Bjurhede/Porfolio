@@ -1,49 +1,55 @@
-    Header
-        -Faded background image
+	
+	Header
+		-100VH
+       		- Nav + Social Icons
+ 			-About, Education, Skills, Work, Contact.
+            		-Linkedin, Guthub
+                	-Mobile = block
+                	-Tablet & Desktop = inline
+
+       		 -  Welcome Text
+            		-Text Animation
         
-        - Nav + Icons 
-            - About, Education, Experience, Contact.
-            - Linkedin, Guthub
-                -mobile = block
-                -Tablet & Desktop = inline
+       		- Buttons
+            		-Read More
+               			- Solid
+            		-Contact
+                		- Transparent
 
-        -  Welcome Text
-            -Faded background image
-        
-        - Buttons
-            -Read More
-                - Solid
-            -Contact
-                - Transparent
+	Main 
 
-    Main 
+        	-About
+            		-Breif about me
 
-        -About
-            -Breif about me
+            	-Education
+                	- Fontendutvecklare Websäkerhet
+                	- Stödpedagog
 
-            -Education
-                - Fontendutvecklare Websäkerhet
-                - Stödpedagog
-
-            -Experience
-                Över 12 år
+           	-Skills
+              		-Seo
+			-LAA
+			-Visual Support
             
-            -Expertice
-                SEO 
-                Lågaffektivt bemötande
-                Tydliggörande pedagogig
+          	-Work
+              		-Käpphäst Stallet
 
-            -Projects
+		Languages
+			-HTML
+			-CSS
+			-GIT
+			-JAVA SCRIPT
 
 
-    Contact
-        -Form
-            -Name
-            -Email
-            -Message
-            -Submit
+		Contact
+       			 -Form
+          		 -Name
+          		 -Email
+           		 -Message
+           		 -Submit
 
-    Footer
-        -Copyright
-        - Email
-        - Social icons
+		Footer
+       			 -Copyright
+        		- Email
+      			  - Social icons
+
+

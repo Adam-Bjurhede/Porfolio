@@ -29,6 +29,7 @@
         --fs-h1: 1.5rem; 
         --fs-h2: 2rem;
         --fs-h3: 3rem;
+        --fs-h4: 1.3rem;
         --fs-p: 1.2rem;
         --fs-a: 0.9rem;
     }
@@ -52,7 +53,7 @@ p {
     font-family: var(--ff-p);
     line-height: var(--lh-long);
     margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.822);
 }
 
 h1 {
@@ -83,7 +84,7 @@ h4 {
     font-size: var(--fs-h4);
     font-weight: 700;
     line-height: 1;
-    color: var(--primary-clr);
+    color: var(--secondary-clr);
 }
 
 .top-nav a {
@@ -101,8 +102,8 @@ h4 {
 }
 
 .top-nav i {
-    font-size: 1.7rem;
-    margin: 5px;
+    font-size: 1.5rem;
+    margin-right: 5px;
 
 }
 .top-nav i:hover {
@@ -112,7 +113,7 @@ h4 {
 
 
 main a {
-    color: var(--secondary-clr);
+    color: var(--primary-clr);
     font-size: var(--fs-p);
     font-family: var(--ff-p);
 }
@@ -176,7 +177,7 @@ header .menu-icon {
 
 /* LANDING  */
 section.landing {
-    padding: 200px 0 0 10%;
+    padding: 100px 0 10% 10%;
     max-width: 90%;
     text-align: start;
 }
@@ -187,8 +188,8 @@ section.landing {
 }
 
 .landing h3 {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    /* margin-bottom: 30px; */
+    padding-bottom: 20px; 
     position: relative;
 }
 .landing h3::after {
@@ -235,6 +236,7 @@ section.landing {
 #about h3 {
     position: relative;
     display: inline-block;
+    text-transform: uppercase;
     }
 
 #about h3::after {
@@ -258,6 +260,7 @@ section.landing {
     "skills"
     "work"
     "work-img"
+    "languages"
     ;
 }
 .about {
@@ -314,12 +317,13 @@ section.landing {
 
 
 .languages {
-background-color:var(--bg-clr-2);
-padding: 10%;
-}
-
-.languages h3 {
-    text-align: center;
+    grid-area: languages;
+    background-color:var(--bg-clr-2);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .languages ul {
@@ -363,14 +367,38 @@ padding: 10%;
     opacity: 0.2;
 }
 
-.languages ul .overlay {
-    background-image: url(img/loading.svg);
-    background-size: cover;
-    width: 100px;
-    height: 100px;
+.spinner-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.spinner{
     position: absolute;
-    top: 50px;
-    left: 40px;
+    width: 50px;
+    height: 50px;
+    border: 10px solid transparent;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite;
+    /* animation: fade 2s linear infinite alternate; */
+}
+.spinner-wrap p {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 5%;
+}
+
+@keyframes spinner{
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% { 
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -379,14 +407,27 @@ padding: 10%;
     background-color: var(--bg-clr-1);
     padding: 50px 0;
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
 }
 #contact h3 {
     color: var(--secondary-clr);
     margin-bottom: 20px;
     text-align: center;
+    margin: 0 auto;
     text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    
 }
-
+#contact h3::after {
+    content: "";
+        position: absolute;
+        width: 60%;
+        border-top: 2px solid var(--secondary-clr);
+        bottom: -5px;
+        left: 20%;
+}
 
 
 #contact form {
@@ -398,6 +439,7 @@ padding: 10%;
     background-color: var(--bg-clr-1);
     color: white;
     font-family: var(--ff-h);
+    margin-top: 40px;
 }
 
 #contact form input, #contact form textarea {
@@ -456,15 +498,27 @@ padding: 10%;
         align-items: center;
     }
 
-    .top-nav ul {
+    header .top-nav ul {
         display: flex;
-        margin: 0 5% 0 10%;
+    }
+
+    header .menu-link {
+        margin-left: 10%;
+    }
+    header .menu-icon {
+        margin-right: 5%;
     }
 
     header .top-nav li {
         padding-right: 15px;
         /* display: inline-block; */
 
+    }
+
+    section.landing {
+        padding: 200px 0 10% 10%;
+        max-width: 90%;
+        text-align: start;
     }
 }
 
@@ -475,12 +529,16 @@ padding: 10%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "about about-img "
-        "education-img education "
+        "education-img education"
         "skills skills-img"
         "work work-img"
+        "languages languages"
         ;
     }
     .grid img {
         max-width: 400px;
     } 
 }
+
+
+@media screen and (min-width: 992px) {}
