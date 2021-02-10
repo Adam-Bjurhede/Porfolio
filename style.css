@@ -139,9 +139,7 @@ span {
 }
 
 /* BUTTON STYLING */
-button {
-    text-shadow: 2px 2px 2px #000000;
-}
+
 .btn {
     border-radius: 999px;
     color: white;
