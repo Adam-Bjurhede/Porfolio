@@ -20,14 +20,13 @@
     --fs-h4: 1rem;
     --fs-p: 1.1rem;
     --fs-a: 0.8rem;
-    --fs-btn: 0.8rem;
+    --fs-btn: 0.7rem;
 
     /* FONT WEIGHT */
     --fw-1: 200; 
     --fw-2: 400;
     --fw-3: 700;
 
-    
     /* LINE HEIGHT */
     --lh-short:1;
     --lh-long:1.5;
@@ -51,11 +50,11 @@
 
 /* ROOT LARGER SCREENS */
 @media screen and (min-width: 992px){
-:root {
-    --fs-h1: 2rem; 
-    --fs-h2: 2.5rem;
-    --fs-h3: 3.7rem;
-    --fs-btn: 1.3rem;
+    :root {
+        --fs-h1: 2rem; 
+        --fs-h2: 2.5rem;
+        --fs-h3: 3.7rem;
+        --fs-btn: 0.9rem;
     }
 }
 
@@ -67,6 +66,7 @@
     text-decoration: none;
     list-style-type: none;
 }
+
 
     /* IMAGES */
 img {
@@ -411,6 +411,7 @@ section.landing {
     flex-wrap: wrap;
     z-index: 3;
     position: relative;
+    padding: 10% 0;
 }
 
 .languages p {
@@ -447,12 +448,13 @@ section.landing {
     width: 50px;
     height: 50px;
     border: 10px solid transparent;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
+    border-top: 5px solid var(--primary-clr);
+    border-bottom: 5px solid var(--primary-clr);
     border-radius: 50%;
     animation: spinner 2s linear infinite, fade 2s linear infinite alternate;;
     
 }
+
 .spinner-wrap p {
     font-size: 1rem;
     position: absolute;
@@ -483,7 +485,6 @@ section.landing {
 #contact {
     background-color: var(--bg-clr-1);
     padding: 50px 0;
-    grid-column: span 2;
     display: flex;
     flex-direction: column;
 }
@@ -545,6 +546,7 @@ section.landing {
     outline: none;
 }
 
+/* FOOTER SECTION */
 .footer {
     background-color: var(--bg-clr-2);
     color: white;
@@ -588,6 +590,7 @@ section.landing {
     header .menu-link {
         margin-left: 10%;
     }
+
     header .menu-icon {
         margin-right: 5%;
     }
@@ -604,6 +607,8 @@ section.landing {
 /*  @MEDIA QUERIES SCREENS ABOVE 768px */
 
 @media screen and (min-width: 768px) {
+ 
+    /* GRID ON LARGER SCREENS */
 
     .grid {
         display: grid;
@@ -621,8 +626,3 @@ section.landing {
         max-width: 400px;
     } 
 }
-
-/* @media screen and (min-width: 992px) {
-
-
-} */
