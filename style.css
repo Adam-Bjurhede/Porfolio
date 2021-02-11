@@ -2,6 +2,8 @@
 /* STYLING */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@200;300;400;700&display=swap');
+
+/* ROOT STYLING */
 :root {
     
     /* COLORS */
@@ -18,6 +20,7 @@
     --fs-h4: 1rem;
     --fs-p: 1.1rem;
     --fs-a: 0.8rem;
+    --fs-btn: 0.8rem;
 
     /* FONT WEIGHT */
     --fw-1: 200; 
@@ -34,7 +37,7 @@
     --ff-p:'Open Sans', sans-serif;
 }
 
-    /* LARGER SCREENS */
+    /* :ROOT MEDIUM SCREENS */
 @media screen and (min-width: 600px) {
     :root {
         --fs-h1: 1.5rem; 
@@ -46,13 +49,16 @@
     }
 }
 
+/* ROOT LARGER SCREENS */
 @media screen and (min-width: 992px){
 :root {
     --fs-h1: 2rem; 
     --fs-h2: 2.5rem;
     --fs-h3: 3.7rem;
+    --fs-btn: 1.3rem;
+    }
 }
-}
+
     /* GENERAL */
 * {
     box-sizing: border-box;
@@ -126,6 +132,7 @@ h4 {
     font-size: 1.5rem;
     margin-right: 5px;
 }
+
 .menu-icon i:hover {
     transform: scale(1.2);
     color: white;
@@ -151,6 +158,7 @@ span {
     border-radius: 999px;
     color: white;
     padding: 5px 40px;
+    font-size: var(--fs-btn);
     text-transform: uppercase;
     font-family: var(--ff-h);
     font-weight: var(--fw-2);
@@ -185,12 +193,6 @@ span {
     z-index: 1;
 }
 
-@media screen and (min-width: 500px) {
-    .clip-path {
-        clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
-    }
-}
-
 .cp-header {
     background-color: var(--bg-clr-2);
 }
@@ -199,10 +201,13 @@ span {
     background-color: var(--bg-clr-1);
 }
 
+@media screen and (min-width: 500px) {
+    .clip-path {
+        clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
+    }
+}
 
 /* ---- layout -----*/
-
-
 
 /* HEADER */
 
@@ -237,9 +242,7 @@ section.landing {
     z-index:4;
 }
 
-
 .landing h2 {
-    /* margin-bottom: 50px; */
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -287,7 +290,6 @@ section.landing {
     80% {
         content: "SEO";
     }
-
 }
 
 /* H3 DECORATION */
@@ -295,7 +297,7 @@ section.landing {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    }
+}
 
 #about h3::after {
         content: "";
@@ -386,7 +388,10 @@ section.landing {
 
 .languages {
     grid-area: languages;
-    background-color:var(--bg-clr-2);
+    background-image: url(img/matrix-356024_1920.jpg);
+    background-color:var(--bg-clr-1);
+    background-attachment: fixed;
+    background-blend-mode:luminosity;
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -395,12 +400,17 @@ section.landing {
     position: relative;
 }
 
+.languages h3 {
+    font-weight: var(--fw-2);
+}
+
 .languages ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     z-index: 3;
+    position: relative;
 }
 
 .languages p {
@@ -419,8 +429,8 @@ section.landing {
 
 .languages li i{
    font-size: 10rem;
-   color:var(--bg-clr-1);
-   text-shadow: 0 0 20px white;
+   color:var(--bg-clr-2);
+   text-shadow: 0 0 30px rgb(255, 255, 255);
 }
 
     /* ANIMATED LOADING SPINNER */
@@ -490,11 +500,11 @@ section.landing {
 
 #contact h3::after {
     content: "";
-        position: absolute;
-        width: 60%;
-        border-top: 2px solid var(--secondary-clr);
-        bottom: -5px;
-        left: 20%;
+    position: absolute;
+    width: 60%;
+    border-top: 2px solid var(--secondary-clr);
+    bottom: -5px;
+    left: 20%;
 }
 
 /* CONTACT FORM */
@@ -534,10 +544,6 @@ section.landing {
     border: 2px solid white;
     outline: none;
 }
-
-/* CLIP PATH CONTACT */
-
-
 
 .footer {
     background-color: var(--bg-clr-2);
@@ -598,6 +604,7 @@ section.landing {
 /*  @MEDIA QUERIES SCREENS ABOVE 768px */
 
 @media screen and (min-width: 768px) {
+
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -615,8 +622,7 @@ section.landing {
     } 
 }
 
+/* @media screen and (min-width: 992px) {
 
-@media screen and (min-width: 992px) {
 
-
-}
+} */
