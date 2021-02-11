@@ -411,7 +411,7 @@ section.landing {
     flex-wrap: wrap;
     z-index: 3;
     position: relative;
-    padding: 10% 0;
+    padding-bottom: 10%;
 }
 
 .languages p {
